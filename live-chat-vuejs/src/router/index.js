@@ -1,6 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import WelcomePage from '../views/WelcomePage'
+import ChatRoom from '../views/ChatRoom'
 
-const routes = []
+const routes = [
+  {
+    path: '/',
+    name: 'WelcomePage',
+    component: WelcomePage
+  },
+  {
+    path: '/chatroom',
+    name: 'ChatRoom',
+    component: ChatRoom
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
