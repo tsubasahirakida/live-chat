@@ -77,6 +77,10 @@ export default {
       } catch (error) {
         console.log(error)
       }      
+    },
+    scrollToBottom () {
+      const element = this.$refs.messages
+      element.scrollTop = element.scrollHeight
     }
   }
 }
